@@ -1,0 +1,53 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/UI-Library/refs/heads/main/Ghost%20Gui'))()
+game.CoreGui.GhostGui.MainFrame.Title.Text = "Crazy Shooter"
+---
+ 
+ 
+AddContent("TextButton", "get money", [[
+while true do wait()
+local args = {
+	"Claim",
+	1
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Packages"):WaitForChild("BridgeKet"):WaitForChild("RemoteEvents"):WaitForChild("Missions"):FireServer(unpack(args))
+local args = {
+	"Claim",
+	2
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Packages"):WaitForChild("BridgeKet"):WaitForChild("RemoteEvents"):WaitForChild("Missions"):FireServer(unpack(args))
+local args = {
+	"Claim",
+	3
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Packages"):WaitForChild("BridgeKet"):WaitForChild("RemoteEvents"):WaitForChild("Missions"):FireServer(unpack(args))
+end
+]])
+AddContent("TextButton", "AlineGun", [[
+local args = {
+	"Buy",
+	"AlienGun"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Packages"):WaitForChild("BridgeKet"):WaitForChild("RemoteEvents"):WaitForChild("GunBridge"):FireServer(unpack(args))
+]])
+AddContent("TextButton", "MachineGun", [[
+local args = {
+	"Buy",
+	"MachineGun"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Packages"):WaitForChild("BridgeKet"):WaitForChild("RemoteEvents"):WaitForChild("GunBridge"):FireServer(unpack(args))
+]])
+AddContent("TextButton", "Rpg", [[
+local args = {
+	"Buy",
+	"_RPG"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Packages"):WaitForChild("BridgeKet"):WaitForChild("RemoteEvents"):WaitForChild("GunBridge"):FireServer(unpack(args))
+]])
+
+AddContent("TextButton", "Auto respawn", [[
+loadstring(game:HttpGet("https://pastebin.com/raw/zspJDWNJ"))()
+]])
+
+AddContent("TextButton", "Aimbot", [[
+loadstring(game:HttpGet("https://pastebin.com/raw/UB1aXeDp"))()
+]])
